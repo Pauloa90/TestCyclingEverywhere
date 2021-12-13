@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Payment</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/contact.css"> -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+
+</head>
+
+<body>
+	<div class="payment-page">
+		<div class="container-fluid containerbody header payment-image">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar navbar-expand-lg navbar-light shadow-5-strong">
+						<a class="navbar-brand" href="index.html">Cycling Everywhere</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+								data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+								aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+								<ul class="navbar-nav ms-auto">
+										<li class="nav-item">
+												<a class="nav-link" id="navlink" href="index.html">HOME</a>
+										</li>
+										<li class="nav-item">
+												<a class="nav-link" href="aboutus.html">ABOUT</a>
+										</li>
+										<li class="nav-item">
+												<a class="nav-link" href="membership.html">MEMBERSHIP</a>
+										</li>
+										<li class="nav-item">
+												<a class="nav-link" href="events.html">EVENTS</a>
+										</li>
+										<li class="nav-item">
+												<a class="nav-link" href="contact.html">CONTACT</a>
+										</li>
+
+								</ul>
+						</div>
+				</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="payment-body">
+    <div class="payment">
+			<form class="membership-form" name="payment-form">
+				<table class="details">
+					<tr>
+						<td>
+							<div class="membership-name form-section">
+
+								<!-- forename -->
+								<div class="membership-forename form-left">
+									<label for="membership-forename">Forename</label>
+									<input type="text" id="membership-forename" placeholder="Forename">
+
+									<!-- Forename empty-->
+									<div class="flex" id="forename-alert">
+										<div class="alert warning">
+											<div class="flex">
+												<div class="content">
+													<b>Please enter your forename</b>
+												</div>
+												<i class="fas x fa-times"></i>
+											</div>
+										</div>
+									</div>
+
+									<!-- Forename empty -->
+								</div>
+
+								<!-- surname -->
+								<div class="membership-surname form-right">
+									<label for="membership-surname">Surname</label>
+									<input type="text" id="membership-surname" placeholder="Surname">
+
+									<!-- Surname Empty -->
+									<div class="flex" id="surname-alert">
+										<div class="alert warning">
+											<div class="flex">
+												<div class="content">
+													<b>Please enter your surname</b>
+												</div>
+												<i class="fas x fa-times"></i>
+											</div>
+										</div>
+									</div>
+
+									<!-- Surname Empty -->
+								</div>
+
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="email-dob form-section">
+
+								<!-- email -->
+								<div class="membership-email form-left">
+									<label for="membership-email">Email Address</label>
+									<input type="text" id="membership-email" placeholder="Email">
+										<!-- input type entered as text rather than email to allow the javascript to validate -->
+
+										<!-- Email Empty/Incorrect -->
+										<div class="flex" id="email-alert">
+											<div class="alert warning">
+												<div class="flex">
+													<div class="content">
+														<b>Please enter a valid email address</b>
+													</div>
+													<i class="fas x fa-times"></i>
+												</div>
+											</div>
+										</div>
+										<!-- Email Empty/Incorrect -->
+
+								</div>
+
+								<!-- DOB -->
+								<div class="membership-dob form-right">
+									<label for="membership-dob">Date of Birth</label>
+									<input type="date" id="membership-dob">
+
+									<div class="flex" id="dob-alert">
+										<div class="alert warning">
+											<div class="flex">
+												<div class="content">
+													<b>Please enter your date of birth</b>
+												</div>
+												<i class="fas x fa-times"></i>
+											</div>
+										</div>
+									</div>
+									<!-- DOB Empty -->
+
+								</div>
+
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="membership-address1 form-section">
+
+								<!-- address line 1 -->
+								<div class="address-line1 form-left">
+									<label for="address-line1">Address Line 1</label>
+									<input type="text" id="address-line1" placeholder="Line 1">
+
+									<!-- Address Line 1 Empty -->
+									<div class="flex" id="line1-alert">
+										<div class="alert warning">
+											<div class="flex">
+												<div class="content">
+													<b>Please enter the first line of your address</b>
+												</div>
+												<i class="fas x fa-times"></i>
+											</div>
+										</div>
+									</div>
+									<!-- Address Line 1 Empty -->
+
+								</div>
+
+								<!-- address line 2 -->
+								<div class="address-line2 form-right">
+									<label for="address-line2">Address Line 2</label>
+									<input type="text" id="address-line2" placeholder="Line 2 (optional)">
+								</div>
+
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="membership-address2 form-section">
+
+								<!-- address town/city -->
+								<div class="town-city form-left">
+									<label for="town-city">Town/City</label>
+									<input type="text" id="town-city" placeholder="Town/City">
+
+									<!-- Town/City Empty -->
+									<div class="flex" id="town-alert">
+										<div class="alert warning">
+											<div class="flex">
+												<div class="content">
+													<b>Please enter your town/city</b>
+												</div>
+												<i class="fas x fa-times"></i>
+											</div>
+										</div>
+									</div>
+									<!-- Town/City Empty -->
+
+								</div>
+
+								<!-- address county -->
+								<div class="address-county form-right">
+									<label for="county">County</label>
+									<select id="county" name="county">
+										<option value="0">--Select County--</option>
+										<option>Antrim</option>
+										<option>Armagh</option>
+										<option>Carlow</option>
+										<option>Cavan</option>
+										<option>Clare</option>
+										<option>Cork</option>
+										<option>Derry</option>
+										<option>Donegal</option>
+										<option>Down</option>
+										<option>Dublin</option>
+										<option>Fermanagh</option>
+										<option>Galway</option>
+										<option>Kerry</option>
+										<option>Kildare</option>
+										<option>Kilkenny</option>
+										<option>Laois</option>
+										<option>Leitrim</option>
+										<option>Limerick</option>
+										<option>Longford</option>
+										<option>Louth</option>
+										<option>Mayo</option>
+										<option>Meath</option>
+										<option>Monaghan</option>
+										<option>Offaly</option>
+										<option>Roscommon</option>
+										<option>Sligo</option>
+										<option>Tipperary</option>
+										<option>Tyrone</option>
+										<option>Waterford</option>
+										<option>Westmeath</option>
+										<option>Wexford</option>
+										<option>Wicklow</option>
+									</select>
+									<!-- County Empty -->
+									<div class="flex" id="county-alert">
+										<div class="alert warning">
+											<div class="flex">
+												<div class="content">
+													<b>Please select a county</b>
+												</div>
+												<i class="fas x fa-times"></i>
+											</div>
+										</div>
+									</div>
+									<!-- County Empty -->
+								</div>
+
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="membership-plan form-section">
+
+								<!-- membership -->
+								<div class="select-membership form-left">
+									<label for="membership-choice">Membership</label>
+									<select id="membership-choice">
+										<option value="0">--Select Membership--</option>
+										<option value="5">Basic</option>
+										<option value="10">Premium</option>
+									</select>
+
+									<!-- Membership Empty -->
+									<div class="flex" id="membership-alert">
+										<div class="alert warning">
+											<div class="flex">
+												<div class="content">
+													<b>Please select a membership</b>
+												</div>
+												<i class="fas x fa-times"></i>
+											</div>
+										</div>
+									</div>
+									<!-- Membership Empty -->
+
+								</div>
+
+								<!-- monthly or yearly membership -->
+								<div class="select-plan form-right">
+									<label for="plan-choice">Payment Plan</label>
+										<select id="plan-choice" onchange="calculateCost()">
+											<option value="0">--Select a plan--</option>
+											<option value="1">Monthly</option>
+											<option value="12">Yearly</option>
+										</select>
+
+										<!-- Plan Empty -->
+										<div class="flex" id="plan-alert">
+											<div class="alert warning">
+												<div class="flex">
+													<div class="content">
+														<b>Please select a plan</b>
+													</div>
+													<i class="fas x fa-times"></i>
+												</div>
+											</div>
+										</div>
+										<!-- Plan Empty -->
+
+								</div>
+
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="discount-payment-method form-section">
+
+								<!-- promo code -->
+								<div class="discount-code form-left">
+									<label for="discount-code">Discount Code</label>
+									<input type="text" id="discount-code" placeholder="Discount" oninput="calculateCost()">
+								</div>
+
+								<!-- payment method -->
+								<div class="payment-method form-right">
+									<label for="payment-method">Payment Method</label>
+									<select id="payment-method" onchange="paymentSelected(this)">
+										<option value="0">--Select Payment Method--</option>
+										<option value="1">Credit/Debit Card</option>
+										<option value="2">Paypal</option>
+									</select>
+
+									<!-- payment method Empty -->
+									<div class="flex" id="payment-method-alert">
+										<div class="alert warning">
+											<div class="flex">
+												<div class="content">
+													<b>Please select a payment method</b>
+												</div>
+												<i class="fas x fa-times"></i>
+											</div>
+										</div>
+									</div>
+									<!-- payment method Empty -->
+
+								</div>
+
+							</div>
+						</td>
+					</tr>
+				</table>
+
+				<table id="card-payment" class="card-payment">
+					<tr>
+						<td>
+							<div class="card-payment1 form-section">
+
+								<!-- full name -->
+								<div class="membership-full-name form-left">
+									<label for="full-name">Full Name</label>
+									<input type="text" id="full-name" placeholder="Full Name">
+								</div>
+
+								<!-- card number -->
+								<div class="card-number form-right">
+									<label for="card-number">Card Number</label>
+									<input type="number" id="card-number" placeholder="Card Number">
+								</div>
+
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="card-payment2 form-section">
+
+								<!-- expiry date -->
+								<div class="card-expiry-date form-left">
+									<label for="card-expiry">Expiry Date</label>
+									<input type="month" id="card-expiry">
+								</div>
+
+								<!-- cvv -->
+								<div class="card-cvv form-right">
+									<label for="card-cvv">CVV</label>
+									<input type="number" id="card-cvv" placeholder="CVV">
+								</div>
+
+							</div>
+						</td>
+					</tr>
+				</table>
+
+				<table id="paypal-payment" class="paypal-payment">
+					<tr>
+						<td>
+							<div class="paypal-payment-link">
+								<a href="https://www.paypal.com/ie/signin">
+									<img src="img/paypal.png" alt="paypal">
+								</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+
+				<div class="cost-submit form-section">
+
+					<!-- total-cost -->
+					<div class="total-cost form-left">
+						<label>Total:</label>
+						<p id="total-cost"></p>
+					</div>
+
+					<!-- submit button -->
+					<div class="submit-button form-right">
+						<input type="button" onclick="return validateInfo()" value="Join">
+					</div>
+				</div>
+			</form>
+
+	  </div>
+</div>
+<!-- footer -->
+<div class="footer">
+	<div class="site-map">
+		<div><a href="index.html">Home</a></div>
+		<div><a href="aboutus.html">About</a></div>
+		<div><a href="membership.html">Membership</a></div>
+		<div><a href="events.html">Events</a></div>
+		<div><a href="contact.html">Contact</a></div>
+	</div>
+	<div class="copyright">
+		<p>&copy; 2021 Cycling Everywhere</p>
+	</div>
+</div>
+<!-- footer -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+		integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+		integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+		crossorigin="anonymous"></script>
+</body>
+
+
+</html>

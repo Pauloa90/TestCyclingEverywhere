@@ -1,0 +1,554 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: 'Raleway',sans-serif;
+    color: #fff;
+    height: 90%;
+}
+
+.header{
+ margin-bottom: 60px;
+}
+
+.imageindex {
+    background-image: url('../img/11.jfif');
+    background-position: top;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.containerbody .navbar {
+    margin-top: 0,5%;
+    padding-top:0;
+}
+
+.containerbody .navbar-brand {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    margin-left: 10%;
+}
+
+.containerbody .navbar-nav {
+    margin-right: 20px;
+    text-align: right;
+}
+
+.nav-link{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: rgb(134, 131, 131)!important;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+a.navbar-brand:hover{
+    color: rgb(187, 181, 181)!important;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.containerbody .info {
+    margin-top: 15%;
+    transform: translateY(-15%);
+}
+
+.containerbody .info h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.containerbody .info p {
+    font-size: 2em;
+    font-weight: 500;
+    color: #aaa;
+    letter-spacing: 2px;
+}
+#textaboutus {
+    color: #aaa;
+}
+
+
+.containerbody .info a {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    /* background: #e91d43; */
+    padding: 10px 20px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.containerindex .info a:hover {
+    background: #e91e63;
+}
+
+.features {
+
+    height: 15rem;
+    width: 15rem;
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* HOME PAGE */
+
+.index-heading{
+  font-size: 50px;
+  color: #fff;
+  margin-left: 10%;
+  margin-right: 55%;
+  margin-top: 150px;
+}
+
+.index-heading p{
+  font-size: 20px;
+  color: #fff;
+}
+
+.index-heading a{
+  text-decoration: none;
+  color: grey;
+}
+
+/* HOME PAGE */
+
+/* ABOUT US PAGE */
+.aboutus-page {
+    background-image: url('../img/22.jpg');
+    background-size: cover;
+    background-position: top;
+    /* background-repeat: no-repeat; */
+    min-height: 100vh;
+}
+
+.header{
+  margin-bottom: 60px;
+}
+
+.aboutus-heading{
+  font-size: 50px;
+  color: #fff;
+  margin-left: 10%;
+  margin-right: 55%;
+  margin-top: 100px;
+}
+
+.aboutus-heading p{
+  font-size: 20px;
+  color: #fff;
+}
+
+.aboutus-heading a{
+  text-decoration: none;
+  color: grey;
+}
+
+.aboutus-content{
+  border: 2px solid grey;
+  /* color: black; */
+}
+
+.general-aboutus{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.general-aboutus b{
+  font-size: 30px;
+  color: grey;
+}
+
+.general-aboutus p{
+  font-size: 20px;
+  color: grey;
+}
+
+.person-one, .person-two{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 20px;
+  color: grey;
+}
+
+.person-one img{
+  float:left;
+  height: 150px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.person-two img{
+  float:right;
+  height: 150px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* ABOUT US PAGE */
+
+/* EVENTS PAGE */
+.events-page {
+    background-image: url('../img/02.jfif');
+    background-position: top;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.event-heading{
+  font-size: 50px;
+  color: #fff;
+  margin-left: 55%;
+  margin-right: 10%;
+  margin-top: 100px;
+}
+
+.event-heading p{
+  font-size: 20px;
+  color: #fff;
+}
+
+.event-heading a{
+  text-decoration: none;
+  color: grey;
+}
+
+.events-body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.events-body b{
+  font-size: 30px;
+  color: grey;
+}
+
+.events-body p{
+  font-size: 20px;
+  color: grey;
+}
+
+.events-body hr{
+  color: black;
+  height: 4px;
+}
+
+.events-body img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.event-one, .event-two, .event-three{
+  display: flex;
+  justify-content: center;
+  color: grey;
+  margin-bottom: 60px;
+}
+
+.event-one, .event-two, .event-three{
+  width: 100%;
+}
+
+.event-one-details, .event-two-map, .event-three-details{
+  margin-right: 20px;
+  margin-left: 20%;
+}
+
+.event-one-map, .event-two-details, .event-three-map{
+  margin-left: 20px;
+  margin-right: 20%;
+}
+
+/* EVENTS PAGE */
+
+/* MEMBERSHIP PAGE */
+
+.membership-image{
+    background-image: url('../img/19.png');
+    background-position: top;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.membership-heading{
+  font-size: 50px;
+  color: #fff;
+  margin-left: 10%;
+  margin-right: 55%;
+  margin-top: 100px;
+}
+
+.membership-heading p{
+  font-size: 20px;
+  color: #fff;
+}
+
+.membership-heading a{
+  text-decoration: none;
+  color: grey;
+}
+
+/* .view-plans a{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+} */
+
+.membership{
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.basic-membership, .premium-membership{
+  /* display: flex;
+  justify-content: center; */
+  width: 350px;
+}
+
+.membership b{
+  font-size: 30px;
+  color: grey;
+}
+
+.membership p{
+  font-size: 20px;
+  color: grey;
+}
+
+.basic-membership{
+  margin-right: 10%;
+  margin-left: 10%
+}
+
+.premium-membership{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* .premium-plan-header{
+  justify-content: center;
+
+} */
+
+.join{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+
+}
+
+.join a{
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+}
+
+.join a:hover{
+  background-color: grey;
+  color: #fff;
+}
+
+/* MEMBERSHIP PAGE */
+
+/* PAYMENTS PAGE */
+.payment-body{
+  color: black;
+  margin-bottom: 60px;
+}
+
+/* .payment-page{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
+
+.payment{
+  margin-left: 200px;
+  margin-right: 200px;
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: #cccccc; */
+}
+
+/* .payment-heading{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+} */
+
+/* .payment-body form{
+  display: flex;
+  justify-content: center;
+} */
+
+.payment form label{
+  margin: 8px 100px 0 8px;
+  /* font-size: 16px;
+  font-weight: bold; */
+}
+
+.payment form input{
+  /* width: 100%; */
+  /* padding: 8px 8px;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-radius: 3px !important;
+  font-size: 16px;
+  /* font-weight: normal;
+  font-style: normal; */
+  /* line-height: 1.2em; */
+  /* background-color: transparent;
+  border-color: #cccccc; */
+}
+
+.payment form p{
+  font-size: 18px;
+}
+
+/* PAYMENTS ALERT */
+.flex{
+  display: flex;
+  justify-content: space-between;
+  /* max-width: 196px; */
+}
+
+.alert{
+  padding: 10px 15px;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
+
+.warning{
+  background-color: #fff;
+  border: 2px solid grey;
+}
+
+.warning b{
+  color: grey;
+  font-size: 14px;
+}
+
+.x{
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* PAYMENTS PAGE */
+
+/* FOOTER */
+
+.footer{
+  clear: both;
+  height: 10vh;
+  background: grey;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  bottom: 0;
+}
+
+.site-map{
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.site-map a{
+  margin-left: 4px;
+  margin-right: 4px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.copyright{
+  margin-right: 50px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+/* FOOTER */
+
+
+
+
+/* POSSIBLE PAYMENTS CSS */
+
+.payment-image{
+  background-image: url('../img/01.jpg');
+  background-position: top;
+  /* background-size: cover; */
+  /* max-height: 30vh; */
+}
+
+.membership-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.details, .card-payment, .paypal-payment, .cost-submit{
+  width: 100%;
+}
+
+.form-section{
+  display: flex;
+}
+
+.form-section label{
+  white-space: nowrap;
+}
+
+.form-left{
+  width: 50%;
+  margin-right: 30px;
+}
+
+.form-right{
+  width: 50%;
+  margin-left: 30px;
+}
+
+.membership-forename input, .membership-surname input, .membership-email input, .membership-dob input, .address-line1 input, .address-line2 input, .town-city input, .address-county select, .select-membership select, .select-plan select, .membership-full-name input{
+  width: 100%;
+}
+
+.card-number input, .card-expiry-date input, .card-cvv input, .discount-code input, .payment-method select{
+  width: 100%;
+}
+
+.submit-button input, .total-cost p{
+  width: 50%;
+  margin-top: 5px;
+}
+
+.paypal-payment{
+  display: flex;
+  justify-content: center;
+}
+
+.paypal-payment-link img{
+  height: 60px;
+}

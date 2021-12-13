@@ -1,0 +1,108 @@
+.contact-page {
+   background-image: url('../img/07.png');
+   background-position: top;
+   background-size: cover;
+   min-height: 100vh;
+}
+
+.contact-heading{
+  font-size: 50px;
+  color: #fff;
+  margin-left: 10%;
+  margin-right: 55%;
+  margin-top: 100px;
+}
+
+.contact-heading p{
+  font-size: 20px;
+  color: #fff;
+}
+
+.contact-heading a{
+  text-decoration: none;
+  color: grey;
+}
+
+.contact-body{
+ display: flex;
+ justify-content: center;
+ margin-top: 60px;
+ margin-bottom: 60px;
+}
+
+.contact-info{
+ margin-right: 80px;
+ width: 250px;
+}
+
+.contact-contact b{
+ font-size: 30px;
+ color: grey;
+}
+
+.contact-contact{
+   color: grey;
+   margin-left: 20px;
+}
+
+.contact-contact img{
+ width: 15px;
+ height: 15px;
+ margin-right: 10px;
+}
+
+.contact-form{
+ margin-left: 80px;
+ margin-right: 20px;
+}
+
+.contact-details{
+ display: flex;
+}
+
+.contact-details-name, .contact-details-email{
+ width:50%;
+}
+
+.contact-details-name input, .contact-details-email input{
+ width:100%
+}
+
+.contact-details-name{
+ margin-right: 5px;
+}
+
+.contact-details-email{
+ margin-left: 5px;
+}
+
+/* Contact form alert */
+.flex{
+  display: flex;
+  justify-content: space-between;
+  max-width: 196px;
+}
+
+.alert{
+  padding: 20px;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+}
+
+.warning{
+  background-color: #fff;
+  border: 2px solid grey;
+}
+
+.warning b{
+  color: grey;
+  font-size: 14px;
+}
+
+.x{
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* CSS for Contact Form (To be separated into two CSS files)  */
